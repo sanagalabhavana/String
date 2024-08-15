@@ -1,0 +1,49 @@
+import java.util.Scanner;
+import java. util. ArrayList;
+import java.util.logging.Logger;
+
+/**
+*String_condition program
+*/
+
+public class String_condition {
+
+ private static final Logger logger=Logger.getLogger(String_condition.class.getName());
+       public static void main(String[] args){
+                        Read_strings();
+             
+/**
+*declare the ArrayList to store the values
+*/
+           }
+
+public static void Read_strings(){
+           ArrayList<String> arr=new ArrayList<>();
+           Scanner s =new Scanner(System.in);
+           logger.info("Enter the strings : ");
+           int i=1;
+           int cnt=0;
+            while(i>0){
+                 String str=s.nextLine();
+                 if(str .equals( "exit")){
+                        print(arr);
+                        break;
+                    }
+                    arr.add(str);
+                   cnt++;
+                   i++;
+             }
+           counter(cnt); 
+}
+/**
+*return the array and length of the array
+*/
+
+public static void print(ArrayList<String> arr){
+           logger.info( "Resultant array :"+arr );
+        }
+public static void  counter(int cnt){
+             logger.info("number of strings : "+cnt);
+ }
+
+}     
