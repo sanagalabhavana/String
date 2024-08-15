@@ -1,0 +1,35 @@
+import java.util.logging.Logger;
+
+/**
+*String_builder program
+*/
+
+public class String_builder {
+
+private static final Logger logger=Logger.getLogger(String_builder.class.getName());
+          public static void main(String[] args){
+/**
+*create the string builder without arguments
+*/
+               StringBuilder sr=new StringBuilder();
+/**
+*append the data to stringbuilder
+*/
+               sr.append("Java ");
+               sr.append("is ");
+               sr.append("an ");
+              sr.append("object ");
+              sr.append("oriented ");
+              sr.append("programming ");
+             sr.append("language");
+/**
+*convert the string builder to string by using of tostring method
+*/
+          String result=sr.toString();
+/**
+*return result
+*/
+         logger.info(result);
+}
+}
+      
